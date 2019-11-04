@@ -15,6 +15,7 @@ jobs:
       - run:
           name: Run node
           command: nohup node ./src/app.js &
+          background: true
       - run:
           name: Test
           command: npm test
