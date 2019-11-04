@@ -20,7 +20,7 @@ jobs:
           name: Test
           command: npm test
       - store_test_results:
-          path: ./test_results
+          path: tests_output
       - run:
           name: Stop Node server
           command: pkill node
