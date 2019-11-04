@@ -1,0 +1,26 @@
+{
+  "name": "circleci-button",
+  "version": "1.0.0",
+  "description": "CircleCI technical challenge",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanjclark/CircleCI-Button.git"
+  },
+  "author": "Al Clark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alanjclark/CircleCI-Button/issues"
+  },
+  "homepage": "https://github.com/alanjclark/CircleCI-Button#readme",
+  "devDependencies": {
+    "chromedriver": "^78.0.1",
+    "nightwatch": "^1.2.4"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.0.0-alpha.5"
+  }
+}
