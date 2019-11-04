@@ -5,7 +5,7 @@ module.exports = {
         browser.click('button[type=button]'), function(result) {
             this.assert.strictEqual(result.status, 0);
         }
-        browser.expect.element('p').text.to.contain('You clicked the buttons!')
+        browser.expect.element('p').text.to.contain('You clicked the button!')
         browser.end();
     }
 };
