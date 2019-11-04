@@ -1,0 +1,31 @@
+version: 2.1
+
+jobs:
+  build-and-test:
+    docker:
+      - image: circleci/node:10-browsers # Do we support latest?
+    steps:
+      - checkout
+      - run:
+          name: Update npm
+          command: 'sudo npm install -g npm@latest'
+      - run:
+          name: Install npm gubbins
+          command: npm install
+      - run:
+          name: Run node
+          command: nohup node ./src/app.js &
+      - run:
+          name: Test
+          command: npm test
+      - store_test_results:
+          path: test_results
+      - run:
+          name: Stop Node server
+          command: pkill node
+
+workflows:
+  version: 2.0
+  build_and_test:
+    jobs:
+      - build-and-test
