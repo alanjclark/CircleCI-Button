@@ -7,7 +7,7 @@ http.createServer(function (req, res) {
 //      res.write(data);
     res.write('<div style="text-align: center;">');
     res.write('<h2>CircleCI Button Test</h2>');
-    res.write('<button type="button" onClick="getElementById(\'click\').innerHTML = \'You clicked the button!\'">Clicky Button</button>');
+    res.write('<button type="button" onClick="getElementById(\'click\').innerHTML = \'I clicked the button!\'">Clicky Button</button>');
     res.write('<p id="click"></p>');
     res.end();
 }).listen(8002);
