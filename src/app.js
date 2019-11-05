@@ -10,4 +10,4 @@ http.createServer(function (req, res) {
     res.write('<button type="button" onClick="getElementById(\'click\').innerHTML = \'I clicked the button!\'">Clicky Button</button>');
     res.write('<p id="click"></p>');
     res.end();
-}).listen(8002);
+}).listen(process.env.PORT || 80);
