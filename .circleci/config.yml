@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build-and-test:
     docker:
-      - image: circleci/node:10-browsers
+      - image: circleci/current-browsers
     steps:
       - checkout
       - run:
