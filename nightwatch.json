@@ -3,12 +3,20 @@
  
   "webdriver" : {
     "start_process": true,
-    "server_path": "node_modules/.bin/chromedriver",
-    "port": 9515
+    "server_path" : "./bin/selenium-server-standalone.jar",
+    "host" : "127.0.0.1",
+    "port": 9515,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "",
+      "webdriver.ie.driver" : ""
+    }
   },
  
   "test_settings" : {
     "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_port"  : 9515,
+      "selenium_host"  : "localhost",
       "desiredCapabilities": {
         "browserName": "chrome"
       }
