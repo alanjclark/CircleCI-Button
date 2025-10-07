@@ -3,13 +3,10 @@
  
   "webdriver" : {
     "start_process": true,
-    "server_path" : "./bin/selenium-server-standalone.jar",
+    "server_path" : "./node_modules/.bin/chromedriver",
     "host" : "127.0.0.1",
     "port": 9515,
-    "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.ie.driver" : ""
-    }
+    "cli_args" : {}
   },
  
   "test_settings" : {
